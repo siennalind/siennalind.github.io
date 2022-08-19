@@ -7,9 +7,13 @@
 body {
     background-image: linear-gradient(
         to bottom right, 
-        hsl(42, 40%, 90%),
-        hsl(102, 40%, 90%)
+        hsl(150, 40%, 90%),
+        hsl(200, 40%, 90%)
     );
+}
+
+.wrapper {
+    margin: 1rem;
 }
 
 header,
@@ -20,16 +24,21 @@ footer {
     max-width: 800px;
 }
 
-h1, h2, h3 {
+h1 {
     font-family: 'Gentium Book Plus', serif;
+    text-align: center;
+    font-size: 2rem;
 }
 
-h1 {
-    text-align: center;
+h2, h3 {
+    font-family: 'Inter', sans-serif;
 }
 
 h2 {
-    margin-top: 0.75em;
+    margin: 0.75em 0 0.35em 0;
+    font-size: 1.25rem;
+    border-bottom: 1px solid black;
+    text-transform: uppercase;
 }
 
 h3 {
@@ -40,6 +49,7 @@ p {
     font-family: 'Inter', sans-serif;
     font-size: 1.15rem;
     line-height: 1.5;
+    margin-bottom: 1rem;
 }
 
 footer > p {
@@ -47,12 +57,12 @@ footer > p {
 }
 
 a, a:visited {
-    color: hsl(102, 90%, 30%);
+    color: hsl(200, 90%, 30%);
 }
 
 @media (hover: hover) {
     a:hover {
-        color: hsl(343, 100%, 39%);
+        color: hsl(150, 100%, 30%);
     }
 }
 
@@ -62,8 +72,8 @@ a, a:visited {
         width: 100vw;
         background-image: linear-gradient(
             to bottom right, 
-            hsl(42, 40%, 80%),
-            hsl(102, 40%, 80%)
+            hsl(150, 80%, 50%),
+            hsl(200, 80%, 50%)
         );
         display: flex;
         justify-content: center;
@@ -72,8 +82,8 @@ a, a:visited {
     
     .wrapper {
         border-radius: 12px;
-        background-color: hsla(0, 0%, 100%, 0.5);
+        background-color: hsla(0, 0%, 100%, 0.85);
         padding: 1.5em;
-        box-shadow: 5px 5px 15px #999;
+        box-shadow: 5px 5px 15px #777;
     }
 }
